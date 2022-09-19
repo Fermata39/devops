@@ -40,8 +40,8 @@ jib {
     }
     // AWS ECR Repository URL 및 Tag 입력
     to {
-        image = '<AWS ECR Repository URL>'
-        tags = ['1.0']
+        image = '255380800200.dkr.ecr.ap-southeast-1.amazonaws.com/skt-user20'
+        tags = ['1.1']
     }
     container {
         entrypoint = ['java', '-Dspring.profiles.active=test', '-jar', 'test-docker-spring-boot-0.0.1-SNAPSHOT.jar']
