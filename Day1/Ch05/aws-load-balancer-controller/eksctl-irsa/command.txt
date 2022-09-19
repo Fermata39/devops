@@ -1,8 +1,10 @@
+eksctl utils associate-iam-oidc-provider --region=ap-southeast-1 --cluster=skt-user20-test-eks-cluster --approve
+
 eksctl create iamserviceaccount \
   --cluster=skt-user20-test-eks-cluster \
   --namespace=kube-system \
   --name=aws-load-balancer-controller \
-  --role-name "skt-user20-AmazonEKSLoadBalancerControllerRole" \
+  --role-name "AmazonEKSLoadBalancerControllerRole-skt-user20" \
   --attach-policy-arn=arn:aws:iam::255380800200:policy/skt-user20-AWSLoadBalancerControllerIAMPolicy \
   --override-existing-serviceaccounts \
   --approve
