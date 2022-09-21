@@ -7,7 +7,7 @@ on:
 
 env:
   ecr-repo: skt-user20
-  image-tag: green
+  image-tag: blue
 
 jobs:
   build:
