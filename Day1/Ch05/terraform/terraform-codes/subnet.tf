@@ -15,13 +15,13 @@ resource "aws_subnet" "test-public-subnet1" {
 
   tags = {
     Name                                     = "skt-user20-test-public-subnet1"
-    "kubernetes.io/cluster/test-eks-cluster" = "shared"
+    "kubernetes.io/cluster/${var.cluster-name}" = "shared"
     "kubernetes.io/role/elb"                 = 1
   }
 
   tags_all = {
     Name                                     = "skt-user20-test-public-subnet1"
-    "kubernetes.io/cluster/test-eks-cluster" = "shared"
+    "kubernetes.io/cluster/${var.cluster-name}" = "shared"
     "kubernetes.io/role/elb"                 = 1
   }
 
@@ -46,13 +46,14 @@ resource "aws_subnet" "test-public-subnet3" {
 
   tags = {
     Name                                     = "skt-user20-test-public-subnet3"
-    "kubernetes.io/cluster/test-eks-cluster" = "shared"
+#    "kubernetes.io/cluster/test-eks-cluster" = "shared"
+    "kubernetes.io/cluster/${var.cluster-name}" = "shared"
     "kubernetes.io/role/elb"                 = 1
   }
 
   tags_all = {
     Name                                     = "skt-user20-test-public-subnet3"
-    "kubernetes.io/cluster/test-eks-cluster" = "shared"
+    "kubernetes.io/cluster/${var.cluster-name}" = "shared"
     "kubernetes.io/role/elb"                 = 1
   }
 
