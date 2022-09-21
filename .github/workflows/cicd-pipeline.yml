@@ -41,7 +41,7 @@ jobs:
   update-argocd-backend-metadata:
     needs: build
     runs-on: ubuntu-latest
-# helm chart 가 있는 디렉토리로 이동 working directory
+# helm chart 가 있는 디렉토리로 이동 working directory-테스트
     defaults:
       run:
         working-directory: ./Day2/Ch07/cicd-pipeline/helm-charts
