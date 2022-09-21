@@ -2,6 +2,7 @@ name: CI/CD Pipeline
 
 on:
   push:
+#    사용하는 Branch 를 사용해야 함 여기서는 main
     branches: [ main ]
 
 env:
