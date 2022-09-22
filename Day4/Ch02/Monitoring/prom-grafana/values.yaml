@@ -171,7 +171,7 @@ alertmanager:
   config:
     global:
 #      slack url 입력
-      slack_api_url: 'https://hooks.slack.com/services/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'
+      slack_api_url: 'https://hooks.slack.com/services/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'
 # 이벤트를 어떻게 받을 것인지 정의, 현재는 1분 단위로 메세지를 받는 것으로 정의
     route:
       receiver: 'default-receiver'
