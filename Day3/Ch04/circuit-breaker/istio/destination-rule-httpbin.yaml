@@ -1,9 +1,11 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
+#동일한 ns 에 등록이 필요
 metadata:
   name: httpbin
 spec:
   host: httpbin
+#  제약조건을 걸어서 조건 이상이면 차단
   trafficPolicy:
     connectionPool:
       tcp:

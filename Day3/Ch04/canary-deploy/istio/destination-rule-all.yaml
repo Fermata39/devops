@@ -1,3 +1,4 @@
+#트래픽이 가는 목적지 지정
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
